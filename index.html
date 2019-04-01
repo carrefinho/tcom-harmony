@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.0.1/Tone.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+    <h3>harmony</h3>
+
+    <div>
+      <p>choose scale:</p>
+      <select id="scale-select">
+        <option value="majr">major scale</option>
+        <option value="minr">minor scale</option>
+        <option value="mapt">major pentatonic scale</option>
+        <option value="locr">locrian mode</option>
+      </select>
+    </div><br>
+
+    <div id="synth-radio">
+      <p>second synthesizer:</p>
+      <label class="container">none
+        <input type="radio" checked="checked" name="synth-radio" id="none" value="none">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">drone
+        <input type="radio" name="synth-radio" id="dron" value="dron">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">conssonance - perfect fifth
+        <input type="radio" name="synth-radio" id="cons" value="cons">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">dissonance - major second
+        <input type="radio" name="synth-radio" id="diss" value="diss">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">paraell motion
+        <input type="radio" name="synth-radio" id="para" value="para">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">chord progression - 1-3-5-4
+        <input type="radio" name="synth-radio" id="chrp" value="chrp">
+        <span class="checkmark"></span>
+      </label>
+    </div>
+
+    <div id="canvas-container"></div>
+
+  </body>
+</html>
